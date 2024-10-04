@@ -53,7 +53,7 @@ public class Main {
         System.out.println( "Duże Litery "+ (int) 'A' +"-"+ (int) 'Z');
         System.out.println( "Cyfry "+ (int) '0' +"-"+ (int) '9');
 
-        System.out.println("Grzesiek nie wiedział dlaczego ogórek jest tak drapieżnym warzywem mimo, że jego kolor na to nie wskazuje");
+        System.out.println("Grzesiek nie wiedział dlaczego gaśnica jest tak drapieżnym narzędziem mimo, że jej kolor na to nie wskazuje");
         for(int i=0;i<5;i++)
         {
             System.out.print("wodrze ");
