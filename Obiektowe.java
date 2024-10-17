@@ -1,44 +1,47 @@
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-public class Main {
+public class Obiektowe {
     public static void main(String[] args) {
-        String ImieNazwisko= new String("Michał Dobrowolski");
+        String ImieNazwisko= "Michał Dobrowolski";
         System.out.println(ImieNazwisko);
         System.out.println(ImieNazwisko.length());
-        String Str1=new String("Ala");
-        String Str2=new String("ma");
-        String Str3=new String("kota");
+        String Str1= "Ala";
+        String Str2= "ma";
+        String Str3= "kota";
         System.out.println(Str1+Str2+Str3);
         System.out.println(
-                "         (1)         \n"+
-                "                    *\n" +
-                "                    * *\n" +
-                "                    * * *\n"+
-                "* * * * * * * * * * * * * *\n" +
-                "* * * * * * * * * * * * * * *\n"+
-                "* * * * * * * * * * * * * *\n"+
-                "                    * * *\n"+
-                "                    * *\n"+
-                "                    *\n");
+                """
+                                 (1)        \s
+                                            *
+                                            * *
+                                            * * *
+                        * * * * * * * * * * * * * *
+                        * * * * * * * * * * * * * * *
+                        * * * * * * * * * * * * * *
+                                            * * *
+                                            * *
+                                            *
+                        """);
 
         System.out.println(
-                        "    (2)\n"+
-                        "     *\n"+
-                        "    * *\n"+
-                        "   * * *\n"+
-                        "  * * * *\n"+
-                        " * * * * *\n"+
-                        "* * * * * *\n"+
-                        " * * * * *\n"+
-                        "  * * * *\n"+
-                        "   * * *\n"+
-                        "    * *\n"+
-                        "     *\n"
+                """
+                            (2)
+                             *
+                            * *
+                           * * *
+                          * * * *
+                         * * * * *
+                        * * * * * *
+                         * * * * *
+                          * * * *
+                           * * *
+                            * *
+                             *
+                        """
 
         );
-        String Str4=new String("Ala ma kota");
+        String Str4= "Ala ma kota";
         System.out.println(Str4.replace("a","e"));
         System.out.println(Str4.toUpperCase());
         System.out.println(Str4.toLowerCase());
