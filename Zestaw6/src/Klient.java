@@ -1,30 +1,30 @@
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Klient {
-    String imie;
-    String nazwisko;
+    String Imie;
+    String Nazwisko;
     ArrayList<Zamowienie> listaZamowien;
+    Adres adres;
 
-    public Klient(String imie, String nazwisko, ArrayList<Zamowienie> listaZamowien) {
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-        this.listaZamowien = Objects.requireNonNullElseGet(listaZamowien, ArrayList::new);
+    public Klient(String Imie, String Nazwisko,Adres adres){
+        this.Imie = Imie;
+        this.Nazwisko = Nazwisko;
+        this.adres = adres;
+        listaZamowien = new ArrayList<Zamowienie>();
     }
-    public void dodajZamowienie(Zamowienie zamowienie) {
-        this.listaZamowien.add(zamowienie);
+    public void dodajZamowiene(Zamowienie z){
+        listaZamowien.add(z);
     }
     public void wyswietlHistorieZamowien() {
-        for(Zamowienie zamowienie : listaZamowien) {
-            zamowienie.wyswietlZamowienie();
+        for(Zamowienie z : listaZamowien){
+            z.wyswietlZamowienie();
         }
     }
     public double obliczLacznyKosztZamowien() {
         double suma=0;
-        for(Zamowienie zamowienie : listaZamowien) {
-            suma+=zamowienie.koszyk.obliczCalkowitaWartosc();
+        for(Zamowienie z : listaZamowien){
+            suma+=z.koszyk.obliczCalkowitaWartosc();
         }
         return suma;
     }
-
 }

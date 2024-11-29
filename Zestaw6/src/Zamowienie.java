@@ -2,16 +2,15 @@ public class Zamowienie {
     KoszykZakupowy koszyk;
     String statusZamowienia;
 
-    public Zamowienie(KoszykZakupowy koszyk, String statusZamowienia) {
-        this.koszyk = koszyk;
-        this.statusZamowienia = statusZamowienia;
+    public Zamowienie(KoszykZakupowy k) {
+        koszyk = k;
+        statusZamowienia = "nowe";
     }
-    public void ustawStatusZamowienia(String status) {
+    public void ustawStatusZamowienia(String status){
         this.statusZamowienia = status;
     }
-    public void wyswietlZamowienie() {
+    public void wyswietlZamowienie(){
         this.koszyk.wyswietlZawartoscKoszyka();
-        System.out.println("Wartość Zamowienia:"+this.koszyk.obliczCalkowitaWartosc());
-        System.out.println("Status Zamowienia: " + this.statusZamowienia+"\n");
+        System.out.println("Status Zamowienie : "+this.statusZamowienia+"\n");
     }
 }
